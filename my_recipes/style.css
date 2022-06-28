@@ -4,4 +4,10 @@ h1
     font-style: italic;
     text-align: center;
     
-        }
+}
+body{
+    background-image: url ('images/image1.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
