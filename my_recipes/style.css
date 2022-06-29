@@ -1,13 +1,85 @@
-h1
+.descriptive h1
 {
     font-size: 50px;
     font-style: italic;
     text-align: center;
     
-}
-body{
-    background-image: url ('images/image1.jpg');
-    background-attachment:fixed;
-    background-repeat: no-repeat;
+} 
+.descriptive{
+    background-color:rgb(190, 107, 12) ;
+    align-items: center;
+    background-attachment:fixed ;
     background-size: cover;
+}
+.descriptive p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(190, 107, 12) ;
+    line-height: 1.5;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 100%;
+    width: 1100px;
+    margin: 0 auto;
+   
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #fff;
+    margin: 10px 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    flex: 1 1 20rem;
+    align-self: normal;
+    display: flex;
+    flex-direction:column ;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+}
+.card .img{
+    max-width: 200px;
+}
+.card h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-align: center;
+}
+.card p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card .btn{
+    display: inline-block;
+    background: rgb(190, 107, 12);
+    color: #fff;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+
+}
+.card:hover{
+    transform:scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0,6);
 }
