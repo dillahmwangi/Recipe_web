@@ -1,85 +1,160 @@
-.descriptive h1
-{
-    font-size: 50px;
-    font-style: italic;
-    text-align: center;
-    
-} 
-.descriptive{
-    background-color:rgb(190, 107, 12) ;
-    align-items: center;
-    background-attachment:fixed ;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),url('images/image36.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
-.descriptive p{
-    margin-bottom: 10px;
-    text-align: center;
+.row{
+    width: 100%;
+    padding: 0px 80px;
 }
-
-body {
-    width: 100vw;
-    min-height: 100vh;
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    position: relative;
+    z-index: 1;
+}
+.navbar ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(190, 107, 12) ;
-    line-height: 1.5;
-    overflow: hidden;
+    margin-top: 10px;
+
 }
-a{
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
     text-decoration: none;
 }
-.container{
-    max-width: 100%;
-    width: 1100px;
-    margin: 0 auto;
-   
-
+.navbar ul li a:hover{
+    background-color: black;
 }
-.row{
+.navbar h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.content{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 }
+.content h1{
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+}
+.content p{
+    font-size: 16px;
+    color: white;
+}
+.content a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    display:inline-block ;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+} 
+.content a:hover{
+    background-color: black;
 
+}
+.container2{
+    max-width: 100%;
+    width: 1100px;
+    margin: 50px auto;
+}
+.row2{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 .card{
-    background: #fff;
-    margin: 10px 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    flex: 1 1 20rem;
-    align-self: normal;
-    display: flex;
-    flex-direction:column ;
-    transition: 0.5s ease;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "button";
+
+    font-family: roboto;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
     cursor: pointer;
+    transition: 0.5s ease;
     
 }
-.card .img{
-    max-width: 200px;
+.card-image{
+    grid-area: image;
+    width: 100%;
+    height: 70vh;
+
 }
-.card h4{
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    margin: 10px 0;
-    text-align: center;
+.card-text{
+    grid-area:text;
 }
-.card p{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.card .btn{
+.card-btn a{
+    
+    margin-top: 5px;
+    font-size: 19px;
+    display:inline-block ;
+    letter-spacing: 2px;
+    grid-area: button;
     display: inline-block;
-    background: rgb(190, 107, 12);
-    color: #fff;
+    background: black;
     text-align: center;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
     align-items: center;
-
+    text-decoration: none;
 }
 .card:hover{
     transform:scale(1.2);
     box-shadow: 5px 5px 15px rgba(0,0,0,0,6);
+}
+
+
+.row3{
+    width: 100%;
+    padding: 0px 80px;
+
+}
+.container3{
+    width: 50%;
+    min-height: 70vh;
+    background-image:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),url('images/image36.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
