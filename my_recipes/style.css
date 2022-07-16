@@ -3,6 +3,10 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s;
+    text-transform: capitalize;
 }
 .container{
     width: 100%;
@@ -85,19 +89,28 @@
     color: white;
 } 
 .content a:hover{
-    background-color: black;
+    background-color: blueviolet;
 
 }
 .container2{
-    max-width: 100%;
-    width: 1100px;
-    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 70vh;
+    margin-top: 0rem;
+    background: linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65))#666;
+    justify-content: center;
+    
+    
 }
 .row2{
 display: flex;
 align-items: center;
 flex-wrap: wrap;
 justify-content: space-between;
+background:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),#666;
+
 }
 .card{
     display: grid;
@@ -107,11 +120,13 @@ justify-content: space-between;
 
     font-family: roboto;
     border-radius: 18px;
-    background-color: white;
+  
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
     cursor: pointer;
     transition: 0.5s ease;
+    background:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65))#666;
+
     
 }
 .card-image{
@@ -122,6 +137,18 @@ justify-content: space-between;
 }
 .card-text{
     grid-area:text;
+    color: white;
+
+}
+.card-text h2{
+    grid-area:text;
+    color: white;
+    
+}
+.card-text p{
+    grid-area:text;
+    color: white;
+    margin-top: 2rem ;
 }
 .card-btn a{
     
@@ -143,18 +170,210 @@ justify-content: space-between;
     transform:scale(1.2);
     box-shadow: 5px 5px 15px rgba(0,0,0,0,6);
 }
+/*end of index.html styling*/
 
+/*about section styling begins*/
+.aboutUs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 70vh;
+    margin-top: 0rem;
+    background: linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65))#666;
+}
+.about-image{
+    flex: 1 1 41rem;
 
-.row3{
+}
+.about-image img{
     width: 100%;
-    padding: 0px 80px;
+}
+.content1{
+    flex: 1 1 41rem;
+    color: white;
+}
+.content1 h1{
+    font-size: 3rem;
+    color: var(--black);
 
+}
+.content1 h2{
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: 1rem;
+   
+}
+.content1 p{
+    font-size: 1.2rem;
+    color: var(--light-black);
+    padding: 1rem 0;
+    line-height: 2
+}
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.icon{
+    flex: 1 1 16rem;
+    text-align: center;
+    background: var(--light-bg);
+    padding: 1rem auto;
+   
+}
+.icon img{
+    height: 10rem;
+}
+.icon h3{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-black);
+    font-weight: normal;
+}
+.btn{
+text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    display:inline-block ;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+/*about section styling ends*/
+
+
+/*start of contactus.html styling*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)), url('images/image43.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.contact .content2{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content2 h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.contact .content2 p{
+    font-weight: 300;
+    color: white;
+    
 }
 .container3{
-    width: 50%;
-    min-height: 70vh;
-    background-image:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),url('images/image36.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
+.container3 .infoContact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container3 .infoContact .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container3 .infoContact .box .icon{
+    height: 60px;
+    background: white;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container3 .infoContact .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+.container3 .infoContact .box .text h3{
+    font-weight: 500;
+    color: black;
+}
+.comtactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+
+}
+.contactForm h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox  input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+contactForm .inputBox textarea:valid ~span{
+
+    color: #222;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #fff;
+    columns: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+/*end of contactus.html styling*/
