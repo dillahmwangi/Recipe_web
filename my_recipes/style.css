@@ -1,17 +1,18 @@
+
 *{
     margin: 0px;
-    padding: 0px;
+    
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none; border: none;
     text-decoration: none;
-    transition: all .2s;
+    
     text-transform: capitalize;
 }
 .container{
     width: 100%;
-    min-height: 100vh;
-    background-image:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),url('images/image36.jpeg');
+    min-height: 80vh;
+    background-image:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),url('images/image54.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -84,12 +85,12 @@
     display:inline-block ;
     letter-spacing: 2px;
     padding: 12px 20px;
-    background-color: black;
+    background: linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65));
     border-radius: 5px;
     color: white;
 } 
 .content a:hover{
-    background-color: blueviolet;
+    background:black;
 
 }
 .container2{
@@ -157,10 +158,10 @@ background:linear-gradient(rgba(66, 54, 54, 0.65), rgba(0,0,0,0.65)),#666;
     display:inline-block ;
     letter-spacing: 2px;
     grid-area: button;
-    display: inline-block;
+    
     background: black;
     text-align: center;
-    color: white;
+    color: red;
     padding: 10px 20px;
     border-radius: 5px;
     align-items: center;
